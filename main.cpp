@@ -4,25 +4,21 @@ using namespace std;
 
 int main()
 {
-    int choice;
-    double width, height, radius;
-    double area;
+    const double rate1 = 1.10;
+    const double rate2 = 2.20;
+    const double rate3 = 3.70;
+    const double rate4 = 4.80;
+    double total_charge;
+    double weight, distance, rate;
 
-    cout << "Geometry Calculator\n";
-    cout << "\t1. Calculate the Area of Circle\n";
-    cout << "\t2. Calculate the Area of Rectangle\n";
-    cout << "\t3. Calculate the Area of Triangle\n";
-    cout << "\t4. Quit\n\n";
-    cout << "Enter your choice (1-4): ";
-    cin >> choice;
+    cout << "Enter the package weight and distance: ";
+    cin >> weight >> distance;
 
     /*
-    Code your program here
-    Use switch statement
-
+    Code you program here
     */
 
-    // Use the following print statements to print the output
-    cout << left << setprecision(2) << fixed;
-    cout << "The area is " << area << endl;
+    // Use the followig print statements
+    cout << setw(10) << left << setprecision(2) << fixed;
+    cout << total_charge << endl;
 }
